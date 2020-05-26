@@ -15,9 +15,10 @@ var img= document.getElementById("test");
 var btn_send_refund = document.getElementsByClassName("btn_send_refund")[0];
 btn_send_refund.addEventListener('click',function(){
     var defect_pic_list = document.getElementById("defect_pic").files[0];
-    img.src = window.URL.createObjectURL(defect_pic_list);
+    x = window.URL.createObjectURL(defect_pic_list);
+    console.log(x);
     // var fr = new FileReader();
         // fr.readAsDataURL(defect_pic_list)
-        debugger
+        // debugger
 })
 
