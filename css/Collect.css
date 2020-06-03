@@ -1,0 +1,35 @@
+.heart_button i{ 
+    position: absolute;
+   margin-top: 60%;
+    margin-left: 80%;
+    font-size: large;
+    color: #FF2400;
+   font-size: 20px;
+}
+.heart_button i:hover{
+    cursor: pointer;
+    color: #fff; 
+
+}
+ 
+.Shop-card-products{
+    /* margin-left:2%; */
+    background-color: aqua;
+    justify-content: center;
+
+}
+.card{
+    margin: 2%;
+
+}
+.product-cards{
+    display: flex;
+    justify-content: center;
+    /* margin-left: 6.5%; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* background-color: antiquewhite; */
+}
+.card img{
+    margin-top: 8%;
+}

@@ -41,9 +41,9 @@
 	font-weight: 700;
 }
 
-.order_list_item__text p {
+/* .order_list_item__text p {
 	margin-bottom: 25px;
-}
+} */
 
 .order_list_item__text .order_list_btn {
 	display: inline-block;

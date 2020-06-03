@@ -21,36 +21,12 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/Shop_detail.css" type="text/css"> -->
     <link rel="stylesheet" href="css/style-order.css" type="text/css">
-    
+    <link rel="stylesheet" href="css/Collect.css" type="text/css">
 </head>
+
 <body>
-    <template id="ordertemplate">
-        <div class="order_list_items">
-            <div class="order_list_item my-2  border p-3">
-                <div class="order_listitem_title d-flex">
-                    <div class="order_list_item__pic col-4  pl-0">
-                        <img src="" alt="">
-                    </div>
-                    <div class="order_list_item__title__text d-flex flex-column justify-content-between">
-                        <h5></h5>
-                        <p></p>
-                        <p class="order_list_item_quantity"></p>
-                    </div>
-                </div>
-                <div class="order_list_item__text">
-                    <ul class="d-flex justify-content-between">
-                        <li class="order_list_item_date"></li>
-                        <li class="order_list_item_total"></li>
-                        <li class="order_list_item_totalprice"></li>
-                    </ul>
-                    <!-- <h5><a href="#">6 ways to prepare breakfast for 30</a></h5> -->
-                    <p class="order_list_item_currencysituation"></p>
-                    <a href="#" class="order_list_btn">READ MORE <span
-                            class="arrow_right"></span></a>
-                </div>
-            </div>
-    </template>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -254,10 +230,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Member</h2>
+                        <h2>Blog</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Member</a>
-                            <span>Order</span>
+                            <a href="./index.html">Home</a>
+                            <span>Blog</span>
                         </div>
                     </div>
                 </div>
@@ -266,74 +242,63 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- Order_list Section Begin -->
-    <section class="order_list spad">
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-5">
-                    <div class="order_list_sidebar">
-                        <!-- <div class="order_list_sidebar__search">
+                <div class=" col-lg-4 col-md-5">
+                    <!-- <div class="blog__sidebar">
+                        <div class="blog__sidebar__search">
                             <form action="#">
                                 <input type="text" placeholder="Search...">
                                 <button type="submit"><span class="icon_search"></span></button>
                             </form>
-                        </div> -->
-                        <div class="order_list_sidebar__item order_list_sidebar__item_navbar navbar d-flex flex-column justify-content-start">
-                            <h4>Member Centre</h4>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <h4>Categories</h4>
                             <ul>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle p-0 " href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Member account management
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Member Account</a>
-                                        <a class="dropdown-item" href="#">Change Password</a>
-                                        <!-- <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a> -->
-                                    </div>
-                                </li>
-                                <li><a href="order-list.html">Order management</a></li>
-                                <li><a href="#">Collect</a></li>
-                                <li><a href="#">Information</a></li>
-                                <li><a href="#">Q & A</a></li>
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Beauty (20)</a></li>
+                                <li><a href="#">Food (5)</a></li>
+                                <li><a href="#">Life Style (9)</a></li>
+                                <li><a href="#">Travel (10)</a></li>
                             </ul>
                         </div>
-                        <!-- <div class="order_list_sidebar__item">
+                        <div class="blog__sidebar__item">
                             <h4>Recent News</h4>
-                            <div class="order_list_sidebar__recent">
-                                <a href="#" class="order_list_sidebar__recent__item">
-                                    <div class="order_list_sidebar__recent__item__pic">
-                                        <img src="img/order/sidebar/sr-1.jpg" alt="">
-                                    </div> 
-                                    <div class="order_list_sidebar__recent__item__text">
+                            <div class="blog__sidebar__recent">
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="img/blog/sidebar/sr-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog__sidebar__recent__item__text">
                                         <h6>09 Kinds Of Vegetables<br /> Protect The Liver</h6>
                                         <span>MAR 05, 2019</span>
                                     </div>
                                 </a>
-                                <a href="#" class="order_list_sidebar__recent__item">
-                                    <div class="order_list_sidebar__recent__item__pic">
-                                        <img src="img/order/sidebar/sr-2.jpg" alt="">
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="img/blog/sidebar/sr-2.jpg" alt="">
                                     </div>
-                                    <div class="order_list_sidebar__recent__item__text">
+                                    <div class="blog__sidebar__recent__item__text">
                                         <h6>Tips You To Balance<br /> Nutrition Meal Day</h6>
                                         <span>MAR 05, 2019</span>
                                     </div>
                                 </a>
-                                <a href="#" class="order_list_sidebar__recent__item">
-                                    <div class="order_list_sidebar__recent__item__pic">
-                                        <img src="img/order/sidebar/sr-3.jpg" alt="">
+                                <a href="#" class="blog__sidebar__recent__item">
+                                    <div class="blog__sidebar__recent__item__pic">
+                                        <img src="img/blog/sidebar/sr-3.jpg" alt="">
                                     </div>
-                                    <div class="order_list_sidebar__recent__item__text">
+                                    <div class="blog__sidebar__recent__item__text">
                                         <h6>4 Principles Help You Lose <br />Weight With Vegetables</h6>
                                         <span>MAR 05, 2019</span>
                                     </div>
                                 </a>
                             </div>
-                        </div> -->
-                        <!-- <div class="order_list_sidebar__item">
+                        </div>
+                        <div class="blog__sidebar__item">
                             <h4>Search By</h4>
-                            <div class="order_list_sidebar__item__tags">
+                            <div class="blog__sidebar__item__tags">
                                 <a href="#">Apple</a>
                                 <a href="#">Beauty</a>
                                 <a href="#">Vegetables</a>
@@ -341,68 +306,44 @@
                                 <a href="#">Healthy Food</a>
                                 <a href="#">Lifestyle</a>
                             </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7">
-                    <div class="row">
-                        <div class="col-lg-9 col-md-12 col-sm-12 ">
-                            <div class="order_status  mb-2 border-bottom pb-3">
-                                <ul class="d-flex justify-content-around">
-                                    <li class="btn order_status_action" id="all">
-                                        <h4>全部</h4>
-                                    </li>
-                                    <li class="btn" id="current">
-                                        <h4>目前</h4>
-                                    </li>
-                                    <li class="btn" id="complete">
-                                        <h4>完成</h4>
-                                    </li>
-                                    <li class="btn" id="returnorchange">
-                                        <h4>退/換貨</h4>
-                                    </li>
-                                    <li class="btn" id="cancel">
-                                        <h4>取消</h4>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="order_items">
-
-                            </div>
-                            <!-- <div class="order_list_item my-2  border p-3">
-                                <div class="order_listitem_title d-flex">
-                                        <div class="order_list_item__pic col-4  pl-0">
-                                            <img src="img/blog/blog-2.jpg" alt="">
-                                        </div>
-                                        <div
-                                            class="order_list_item__title__text d-flex flex-column justify-content-between">
-                                            <h5>Sony</h5>
-                                            <p>color : black</p>
-                                            <ul>
-                                                <li>Quantity : 1</li>
-                                                <li>$3990</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="order_list_item__text">
-                                        <ul class="d-flex justify-content-between">
-                                            <li class=><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                            <li>Total amount : 1</li>
-                                            <li>Order Amount : 3990</li>
-                                        </ul>
-                                        <p>Buyer pickup</p>
-                                        <a href="#" class="order_list_btn">READ MORE <span
-                                                class="arrow_right"></span></a>
-                                    </div>
+                        </div>
+                    </div> -->
+                    <div
+                        class="order_list_sidebar__item order_list_sidebar__item_navbar navbar d-flex flex-column justify-content-start">
+                        <h4>Member Centre</h4>
+                        <ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle p-0 " href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Member account management
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Member Account</a>
+                                    <a class="dropdown-item" href="#">Change Password</a>
+                                    <!-- <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a> -->
                                 </div>
-                            </div> -->
+                            </li>
+                            <li><a href="order-list.html">Order management</a></li>
+                            <li><a href="#">Collect</a></li>
+                            <li><a href="#">Information</a></li>
+                            <li><a href="#">Q & A</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-7 col-">
+                    <div class="Shop-card-products mr-auto">
+                        <div class="row">
+                            <div class="product-cards d-flex flex-wrap">
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
     </section>
-    <!-- Order_list Section End -->
+    <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer spad">
@@ -478,7 +419,20 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
+    <template id="collect_template">
+        <div class="card col-7 col-md-5">
+            <div class="heart_button">
+                <i class="fas fa-heart"></i>
+            </div>
+            <img src="img/blog/blog-1.jpg" class="card-img" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make
+                    up
+                </p>
+            </div>
+        </div>
+    </template>
+    
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -488,9 +442,20 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/order-list.js"></script>
+    <script src="https://kit.fontawesome.com/6ca253113b.js" crossorigin="anonymous"></script>
+    <script src="js/collect.js"></script>
+    <script>
+        $.ajax({ 
+    type: "get",
+    url: "https://raw.githubusercontent.com/vivian990501/FileStorage/master/Collection_test.json",
 
-
+    success: function (response) {
+        
+        let data= JSON.parse(response)
+        create_collection(data)
+    },
+});
+    </script>
 </body>
 
 </html>

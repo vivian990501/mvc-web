@@ -140,7 +140,6 @@ function CreateOrders(Array){
         let productname = cloneContent.querySelector('.order_list_item__title__text h5');
         let productcolor = cloneContent.querySelector('.order_list_item__title__text p');
         let quantity = cloneContent.querySelector('.order_list_item_quantity');
-        let price = cloneContent.querySelector('.order_list_item_price');
         let orderdate = cloneContent.querySelector('.order_list_item_date');
         let total = cloneContent.querySelector('.order_list_item_total');
         let totalprice = cloneContent.querySelector('.order_list_item_totalprice');
@@ -148,12 +147,11 @@ function CreateOrders(Array){
         // debugger
         img.setAttribute('src', `${item.ProductImage}`);
         productname.innerText=`${item.ProductBrand} ${item.ProductName}`;
-        productcolor.innerText=`color : ${item.ProductColor}`;
-        quantity.innerText=`Quantity : ${item.Quantity}`;
-        price.innerText=`$${item.price}`;
+        productcolor.innerText=`顏色 : ${item.ProductColor}`;
+        quantity.innerText=`單價 : ${item.Price}`;
         orderdate.innerHTML=`<i class="fa fa-calendar-o"></i> ${item.OrderDate}`;
-        total.innerText=`Total amount : ${item.Total}`;
-        totalprice.innerText=`Order Amount : ${item.TotalAmount}`;
+        total.innerText=`總金額 : ${item.Total}`;
+        totalprice.innerText=`總數量 : ${item.TotalAmount}`;
         currencysituation.innerText=`${item.CurrencySituation}`;
         order_items.appendChild(cloneContent);
     })
